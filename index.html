@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Farzam — Web Developer</title>
+
+    <meta
+      name="description"
+      content="Farzam is a web developer building modern web experiences with Python, Django, React and JavaScript."
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Effects -->
+    <div class="noise"></div>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Cursor -->
+    <div id="cursor"></div>
+
+    <!-- Navigation -->
+    <div class="menu-wrap">
+      <button
+        id="menuButton"
+        class="menu-button glass magnetic"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+
+      <nav id="menuPanel" class="menu-panel glass">
+        <a class="menu-link" href="#home">Home</a>
+        <a class="menu-link" href="#about">About</a>
+        <a class="menu-link" href="#work">Work</a>
+        <a class="menu-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- =====================================
+         HERO
+    ====================================== -->
+
+      <section
+        id="home"
+        class="min-h-screen flex items-center px-6 md:px-12 lg:px-20 pt-20 border-y border-white/10"
+      >
+        <div class="max-w-7xl w-full mx-auto">
+          <div class="mono text-xs md:text-sm text-neutral-500 mb-8 reveal">
+            / WEB DEVELOPER · 2026
+          </div>
+
+          <h1
+            class="hero-title text-[18vw] md:text-[14vw] lg:text-[11vw] font-semibold uppercase max-w-7xl"
+          >
+            <span class="reveal">Farzam</span>
+            <br />
+            <span class="outline reveal">Developer</span>
+          </h1>
+
+          <div
+            class="mt-12 flex flex-col md:flex-row md:items-end justify-between gap-10 reveal"
+          >
+            <p
+              class="max-w-md text-neutral-400 text-base md:text-lg leading-relaxed"
+            >
+              I build fast, modern and slightly weird things for the web. Mostly
+              with Python, Django, JavaScript and React.
+            </p>
+
+            <a
+              href="#work"
+              class="magnetic inline-flex items-center gap-3 border border-white/20 rounded-full px-6 py-3 w-fit hover:bg-white hover:text-black transition"
+            >
+              Explore my work
+
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Currently -->
+
+      <section class="px-6 md:px-12 lg:px-20 py-24 md:py-32">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex items-center gap-3 mb-10">
+            <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+
+            <span
+              class="mono text-xs text-neutral-500 uppercase tracking-widest"
+            >
+              Currently
+            </span>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2
+                class="text-4xl md:text-6xl font-medium tracking-tight leading-[0.95]"
+              >
+                Building things
+                <span class="text-neutral-600">I actually care about.</span>
+              </h2>
+            </div>
+
+            <div class="glass rounded-[32px] p-7 md:p-8">
+              <div class="space-y-6">
+                <div class="flex justify-between gap-6">
+                  <span class="text-neutral-500">Building</span>
+                  <span class="text-right">Nobino</span>
+                </div>
+
+                <div class="flex justify-between gap-6">
+                  <span class="text-neutral-500">Learning</span>
+                  <span class="text-right">Compilers & systems</span>
+                </div>
+
+                <div class="flex justify-between gap-6">
+                  <span class="text-neutral-500">Exploring</span>
+                  <span class="text-right">New ideas</span>
+                </div>
+
+                <div class="flex justify-between gap-6">
+                  <span class="text-neutral-500">Status</span>
+                  <span class="text-right text-neutral-300">
+                    Always building
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         MARQUEE
+    ====================================== -->
+
+      <section
+        class="border-y border-white/10 py-6 marquee text-neutral-500 mono text-xs"
+      >
+        <div class="marquee-inner">
+          <span>
+            PYTHON&nbsp;&nbsp; / &nbsp;&nbsp;DJANGO&nbsp;&nbsp; / &nbsp;&nbsp;
+            JAVASCRIPT&nbsp;&nbsp; / &nbsp;&nbsp;REACT&nbsp;&nbsp; /
+            &nbsp;&nbsp; VUE&nbsp;&nbsp; / &nbsp;&nbsp;DOCKER&nbsp;&nbsp; /
+            &nbsp;&nbsp; REST API&nbsp;&nbsp; / &nbsp;&nbsp;UI&nbsp;&nbsp; /
+            &nbsp;&nbsp;
+          </span>
+
+          <span>
+            PYTHON&nbsp;&nbsp; / &nbsp;&nbsp;DJANGO&nbsp;&nbsp; / &nbsp;&nbsp;
+            JAVASCRIPT&nbsp;&nbsp; / &nbsp;&nbsp;REACT&nbsp;&nbsp; /
+            &nbsp;&nbsp; VUE&nbsp;&nbsp; / &nbsp;&nbsp;DOCKER&nbsp;&nbsp; /
+            &nbsp;&nbsp; REST API&nbsp;&nbsp; / &nbsp;&nbsp;UI&nbsp;&nbsp; /
+            &nbsp;&nbsp;
+          </span>
+        </div>
+      </section>
+
+      <!-- =====================================
+         ABOUT
+    ====================================== -->
+
+      <section id="about" class="px-6 md:px-12 lg:px-20 py-32 md:py-48">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-24">
+            <div class="mono text-xs text-neutral-500 reveal">01 / ABOUT</div>
+
+            <div>
+              <h2
+                class="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight reveal"
+              >
+                I like turning
+                <span class="text-neutral-500"> ideas </span>
+                into things people can actually use.
+              </h2>
+
+              <p
+                class="mt-10 text-neutral-400 max-w-2xl text-lg leading-relaxed reveal"
+              >
+                I'm a developer focused on building full-stack web applications.
+                I care about clean interfaces, good architecture and
+                understanding how things work under the hood.
+              </p>
+
+              <div class="mt-14 flex flex-wrap gap-3 reveal">
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  Python
+                </span>
+
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  Django
+                </span>
+
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  JavaScript
+                </span>
+
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  React
+                </span>
+
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  Vue
+                </span>
+
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  Docker
+                </span>
+
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  PostgreSQL
+                </span>
+
+                <span class="skill glass rounded-full px-4 py-2 text-sm">
+                  Linux
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         WORK
+    ====================================== -->
+
+      <section
+        id="work"
+        class="px-6 md:px-12 lg:px-20 pb-32 md:pb-48 border-y border-white/10"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="flex items-end justify-between mb-12 reveal">
+            <div>
+              <div class="mono text-xs text-neutral-500 mb-5">
+                02 / SELECTED WORK
+              </div>
+
+              <h2 class="text-5xl md:text-7xl font-medium tracking-tight">
+                Things I've built.
+              </h2>
+            </div>
+
+            <span class="hidden md:block mono text-xs text-neutral-600">
+              04 PROJECTS
+            </span>
+          </div>
+
+          <!-- Projects -->
+
+          <div class="grid md:grid-cols-2 gap-5">
+            <!-- Project 1 -->
+
+            <!-- Project 1 -->
+            <article
+              class="project glass rounded-[32px] p-3 sm:p-4 md:p-5 reveal"
+            >
+              <div
+                class="project-image aspect-[4/3] rounded-[24px] overflow-hidden bg-gradient-to-br from-neutral-700 via-neutral-900 to-black relative"
+              >
+                <div
+                  class="absolute inset-[6%] rounded-[8%] border border-white/10 bg-white/5 backdrop-blur-xl p-[6%]"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="mono text-[clamp(8px,1vw,12px)] text-neutral-500"
+                    >
+                      EDU
+                    </span>
+
+                    <span class="text-neutral-500 text-[clamp(10px,1vw,14px)]">
+                      ↗
+                    </span>
+                  </div>
+
+                  <div class="absolute left-[6%] bottom-[10%]">
+                    <div
+                      class="text-[clamp(22px,3.2vw,42px)] font-semibold leading-[0.9]"
+                    >
+                      Learn.
+                    </div>
+
+                    <div
+                      class="text-[clamp(22px,3.2vw,42px)] font-semibold leading-[0.9] text-neutral-600"
+                    >
+                      Practice.
+                    </div>
+
+                    <div
+                      class="text-[clamp(22px,3.2vw,42px)] font-semibold leading-[0.9] text-neutral-600"
+                    >
+                      Improve.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="px-1 sm:px-2 pt-5 sm:pt-6 pb-1 sm:pb-2">
+                <div class="flex justify-between gap-4">
+                  <div class="min-w-0">
+                    <h3 class="text-lg sm:text-xl font-medium">EduGo</h3>
+
+                    <p
+                      class="text-neutral-500 text-xs sm:text-sm mt-1.5 sm:mt-2"
+                    >
+                      Interactive learning platform
+                    </p>
+                  </div>
+
+                  <span class="mono text-xs text-neutral-600 shrink-0">
+                    01
+                  </span>
+                </div>
+
+                <div class="flex gap-2 mt-4 sm:mt-5 flex-wrap">
+                  <span class="text-xs text-neutral-500">React</span>
+                  <span class="text-xs text-neutral-500">Django</span>
+                  <span class="text-xs text-neutral-500">REST</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article
+              class="project glass rounded-[32px] p-3 sm:p-4 md:p-5 reveal"
+            >
+              <div
+                class="project-image aspect-[4/3] rounded-[24px] overflow-hidden bg-gradient-to-br from-neutral-800 via-black to-neutral-700 relative"
+              >
+                <div class="absolute inset-[6%]">
+                  <div
+                    class="h-full rounded-[8%] border border-white/10 bg-black/20 backdrop-blur-xl p-[6%]"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span
+                        class="mono text-[clamp(8px,1vw,12px)] text-neutral-500"
+                      >
+                        SEENTAX
+                      </span>
+
+                      <span
+                        class="text-[clamp(10px,1vw,14px)] text-neutral-600"
+                      >
+                        JUDGE
+                      </span>
+                    </div>
+
+                    <div class="mt-[12%] grid grid-cols-3 gap-[3%]">
+                      <div
+                        class="aspect-square rounded-[12%] bg-white/10"
+                      ></div>
+
+                      <div class="aspect-square rounded-[12%] bg-white/5"></div>
+
+                      <div
+                        class="aspect-square rounded-[12%] bg-white/10"
+                      ></div>
+                    </div>
+
+                    <div class="mt-[8%] space-y-[4%]">
+                      <div
+                        class="h-[clamp(3px,.45vw,6px)] rounded-full bg-white/10 w-3/4"
+                      ></div>
+
+                      <div
+                        class="h-[clamp(3px,.45vw,6px)] rounded-full bg-white/5 w-1/2"
+                      ></div>
+                    </div>
+
+                    <div
+                      class="absolute bottom-[7%] left-[6%] right-[6%] flex justify-between"
+                    >
+                      <span
+                        class="mono text-[clamp(7px,.8vw,10px)] text-neutral-600"
+                      >
+                        SUBMISSIONS
+                      </span>
+
+                      <span
+                        class="mono text-[clamp(7px,.8vw,10px)] text-neutral-600"
+                      >
+                        128
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="px-1 sm:px-2 pt-5 sm:pt-6 pb-1 sm:pb-2">
+                <div class="flex justify-between gap-4">
+                  <div class="min-w-0">
+                    <h3 class="text-lg sm:text-xl font-medium">Seentax</h3>
+
+                    <p
+                      class="text-neutral-500 text-xs sm:text-sm mt-1.5 sm:mt-2"
+                    >
+                      Online programming contest platform
+                    </p>
+                  </div>
+
+                  <span class="mono text-xs text-neutral-600 shrink-0">
+                    02
+                  </span>
+                </div>
+
+                <div class="flex gap-x-3 gap-y-1.5 mt-4 sm:mt-5 flex-wrap">
+                  <span class="text-xs text-neutral-500">Django</span>
+                  <span class="text-xs text-neutral-500">Celery</span>
+                  <span class="text-xs text-neutral-500">Docker</span>
+                  <span class="text-xs text-neutral-500">PostgreSQL</span>
+                  <span class="text-xs text-neutral-500">React</span>
+                  <span class="text-xs text-neutral-500">Tailwind</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article
+              class="project glass rounded-[32px] p-3 sm:p-4 md:p-5 reveal"
+            >
+              <div
+                class="project-image aspect-[4/3] rounded-[24px] overflow-hidden bg-gradient-to-br from-neutral-700 via-neutral-950 to-black relative"
+              >
+                <div
+                  class="absolute inset-[6%] rounded-[8%] bg-[#0d0d0d] text-white p-[6%] border border-white/10"
+                >
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="text-[clamp(8px,1vw,12px)] mono text-neutral-500"
+                    >
+                      YOOZ
+                    </span>
+
+                    <span
+                      class="text-[clamp(8px,1vw,12px)] mono text-neutral-600"
+                    >
+                      LANG
+                    </span>
+                  </div>
+
+                  <div
+                    class="mt-[10%] mono text-[clamp(8px,1.15vw,14px)] leading-[1.8]"
+                  >
+                    <div class="whitespace-nowrap">
+                      <span class="text-neutral-600">01</span>
+
+                      <span class="text-neutral-500 ml-[4%]"> fn </span>
+
+                      <span class="text-white"> main </span>
+
+                      <span class="text-neutral-500"> () {"{"} </span>
+                    </div>
+
+                    <div class="whitespace-nowrap">
+                      <span class="text-neutral-600">02</span>
+
+                      <span class="text-neutral-400 ml-[4%]"> print </span>
+
+                      <span class="text-white">(</span>
+
+                      <span class="text-neutral-400"> "Hello, Yooz" </span>
+
+                      <span class="text-white">)</span>
+                    </div>
+
+                    <div class="whitespace-nowrap">
+                      <span class="text-neutral-600">03</span>
+
+                      <span class="text-neutral-500 ml-[4%]"> {"}"} </span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="absolute bottom-[7%] left-[6%] right-[6%] flex justify-between"
+                  >
+                    <span
+                      class="text-[clamp(7px,.8vw,10px)] mono text-neutral-600"
+                    >
+                      01—LANGUAGE
+                    </span>
+
+                    <span class="text-[clamp(8px,1vw,12px)] text-neutral-600">
+                      ↗
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="px-1 sm:px-2 pt-5 sm:pt-6 pb-1 sm:pb-2">
+                <div class="flex justify-between gap-4">
+                  <div class="min-w-0">
+                    <h3 class="text-lg sm:text-xl font-medium">Yooz</h3>
+
+                    <p
+                      class="text-neutral-500 text-xs sm:text-sm mt-1.5 sm:mt-2"
+                    >
+                      A programming language built from scratch
+                    </p>
+                  </div>
+
+                  <span class="mono text-xs text-neutral-600 shrink-0">
+                    03
+                  </span>
+                </div>
+
+                <div class="flex gap-3 mt-4 sm:mt-5 flex-wrap">
+                  <span class="text-xs text-neutral-500">Language</span>
+                  <span class="text-xs text-neutral-500">Compiler</span>
+                  <span class="text-xs text-neutral-500">GitHub</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article
+              class="project glass rounded-[32px] p-3 sm:p-4 md:p-5 reveal"
+            >
+              <div
+                class="project-image aspect-[4/3] rounded-[24px] overflow-hidden bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-500 relative"
+              >
+                <div
+                  class="absolute inset-[6%] rounded-[8%] border border-white/20 p-[6%]"
+                >
+                  <div class="flex items-center justify-between">
+                    <span class="mono text-[clamp(8px,1vw,12px)]"> FLOW </span>
+
+                    <span class="text-[clamp(7px,.8vw,10px)] opacity-50">
+                      PROJECTS
+                    </span>
+                  </div>
+
+                  <div
+                    class="absolute left-[8%] right-[8%] top-1/2 -translate-y-1/2 space-y-2 sm:space-y-3"
+                  >
+                    <div
+                      class="h-8 sm:h-12 rounded-xl bg-white text-black px-3 sm:px-4 flex items-center justify-between shadow-lg"
+                    >
+                      <span class="text-xs sm:text-sm font-medium">
+                        Design
+                      </span>
+                      <span class="text-[10px] sm:text-xs opacity-60">
+                        03
+                      </span>
+                    </div>
+                    <div
+                      class="h-8 sm:h-12 rounded-xl bg-white/10 border border-white/10"
+                    ></div>
+                    <div
+                      class="h-8 sm:h-12 rounded-xl bg-white/5 border border-white/10"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="px-1 sm:px-2 pt-5 sm:pt-6 pb-1 sm:pb-2">
+                <div class="flex justify-between gap-4">
+                  <div class="min-w-0">
+                    <h3 class="text-lg sm:text-xl font-medium">Flow Master</h3>
+
+                    <p
+                      class="text-neutral-500 text-xs sm:text-sm mt-1.5 sm:mt-2"
+                    >
+                      Minimal project management tool
+                    </p>
+                  </div>
+
+                  <span class="mono text-xs text-neutral-600 shrink-0">
+                    04
+                  </span>
+                </div>
+
+                <div class="flex gap-3 mt-4 sm:mt-5 flex-wrap">
+                  <span class="text-xs text-neutral-500">Django</span>
+                  <span class="text-xs text-neutral-500">React</span>
+                  <span class="text-xs text-neutral-500">TypeScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         PHILOSOPHY
+    ====================================== -->
+
+      <section
+        class="px-6 md:px-12 lg:px-20 py-32 md:py-48 border-y border-white/10"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-12">
+            <div class="mono text-xs text-neutral-500 reveal">
+              03 / APPROACH
+            </div>
+
+            <div>
+              <p
+                class="text-4xl md:text-6xl lg:text-7xl leading-tight tracking-tight reveal"
+              >
+                Good software should feel
+                <span class="text-neutral-600"> obvious. </span>
+              </p>
+
+              <div class="mt-16 grid md:grid-cols-3 gap-5 reveal">
+                <div class="glass rounded-3xl p-6">
+                  <span class="mono text-xs text-neutral-600"> 01 </span>
+
+                  <h3 class="mt-12 text-lg">Simple</h3>
+
+                  <p class="text-sm text-neutral-500 mt-3 leading-relaxed">
+                    Remove unnecessary complexity. Keep the important parts
+                    visible.
+                  </p>
+                </div>
+
+                <div class="glass rounded-3xl p-6">
+                  <span class="mono text-xs text-neutral-600"> 02 </span>
+
+                  <h3 class="mt-12 text-lg">Useful</h3>
+
+                  <p class="text-sm text-neutral-500 mt-3 leading-relaxed">
+                    Build things that solve actual problems, not just things
+                    that look impressive.
+                  </p>
+                </div>
+
+                <div class="glass rounded-3xl p-6">
+                  <span class="mono text-xs text-neutral-600"> 03 </span>
+
+                  <h3 class="mt-12 text-lg">Curious</h3>
+
+                  <p class="text-sm text-neutral-500 mt-3 leading-relaxed">
+                    Understand the tools instead of blindly depending on them.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+         CONTACT
+    ====================================== -->
+
+      <section
+        id="contact"
+        class="min-h-[80vh] flex items-center px-6 md:px-12 lg:px-20 py-32 border-y border-white/10"
+      >
+        <div class="max-w-7xl mx-auto w-full">
+          <div class="mono text-xs text-neutral-500 mb-8 reveal">
+            04 / CONTACT
+          </div>
+
+          <h2
+            class="text-[15vw] md:text-[12vw] lg:text-[10vw] leading-[.8] tracking-[-.07em] font-semibold reveal"
+          >
+            Let's make
+            <br />
+
+            <span class="outline"> something. </span>
+          </h2>
+
+          <div class="mt-16 flex flex-col md:flex-row gap-4 reveal">
+            <a
+              href="mailto:contact@farzamv.ir"
+              class="magnetic glass rounded-full px-7 py-4 w-fit hover:bg-white hover:text-gray-100 transition"
+            >
+              contact@farzamv.ir
+            </a>
+
+            <a
+              href="https://github.com/farzamvalizade"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="magnetic border border-white/10 rounded-full px-7 py-4 w-fit hover:border-white/30 transition"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lab -->
+
+    <section class="px-6 md:px-12 lg:px-20 py-24 md:py-32">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <span class="mono text-xs text-neutral-600">
+              05 / EXPERIMENTS / 2025
+            </span>
+
+            <h2 class="text-4xl md:text-6xl font-medium tracking-tight mt-3">
+              Lab
+            </h2>
+          </div>
+        </div>
+
+        <div class="glass rounded-[32px] overflow-hidden">
+          <!-- Item 1: POS System Internship -->
+          <div
+            class="grid grid-cols-[1fr_auto] items-center px-6 md:px-8 py-6 border-b border-white/10"
+          >
+            <div>
+              <h3 class="font-medium">POS System Internship</h3>
+              <p class="text-sm text-neutral-600 mt-1">
+                Intern at a POS system company (3 months)
+              </p>
+            </div>
+
+            <span class="mono text-xs text-neutral-600">2025</span>
+          </div>
+
+          <!-- Item 2: Yooz compiler -->
+          <div
+            class="grid grid-cols-[1fr_auto] items-center px-6 md:px-8 py-6 border-b border-white/10"
+          >
+            <div>
+              <h3 class="font-medium">Yooz compiler</h3>
+              <p class="text-sm text-neutral-600 mt-1">
+                Programming language experiments
+              </p>
+            </div>
+
+            <span class="mono text-xs text-neutral-600">2025</span>
+          </div>
+
+          <!-- Item 3: Seentax judge system -->
+          <div
+            class="grid grid-cols-[1fr_auto] items-center px-6 md:px-8 py-6 border-b border-white/10"
+          >
+            <div>
+              <h3 class="font-medium">Seentax judge system</h3>
+              <p class="text-sm text-neutral-600 mt-1">
+                Sandboxed code execution
+              </p>
+            </div>
+
+            <span class="mono text-xs text-neutral-600">2025</span>
+          </div>
+
+          <!-- Item 4: Linux experiments -->
+          <div class="grid grid-cols-[1fr_auto] items-center px-6 md:px-8 py-6">
+            <div>
+              <h3 class="font-medium">Linux experiments</h3>
+              <p class="text-sm text-neutral-600 mt-1">
+                Systems, tooling and customization
+              </p>
+            </div>
+
+            <span class="mono text-xs text-neutral-600"> 2026 </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="px-6 md:px-12 lg:px-20 py-8 border-t border-white/10">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-xs mono"
+      >
+        <span class="text-neutral-600 my-3"> © 2026 FARZAM </span>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://github.com/farzamvalizade"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group relative overflow-hidden rounded-full border border-white/10 bg-white/[0.04] px-5 py-2.5 text-neutral-400 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.09] hover:text-white hover:shadow-[0_10px_40px_rgba(255,255,255,0.08)]"
+          >
+            <span class="relative z-10 flex items-center gap-2">
+              GitHub
+              <span
+                class="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
+              >
+                ↗
+              </span>
+            </span>
+
+            <span
+              class="absolute -bottom-8 -left-4 h-12 w-[120%] rounded-full bg-white/10 blur-xl transition-transform duration-700 group-hover:translate-y-[-10px]"
+            ></span>
+          </a>
+
+          <a
+            href="https://t.me/farzamvl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group relative overflow-hidden rounded-full border border-white/10 bg-white/[0.04] px-5 py-2.5 text-neutral-400 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.09] hover:text-white hover:shadow-[0_10px_40px_rgba(255,255,255,0.08)]"
+          >
+            <span class="relative z-10 flex items-center gap-2">
+              Telegram
+              <span
+                class="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
+              >
+                ↗
+              </span>
+            </span>
+
+            <span
+              class="absolute -bottom-8 -left-4 h-12 w-[120%] rounded-full bg-white/10 blur-xl transition-transform duration-700 group-hover:translate-y-[-10px]"
+            ></span>
+          </a>
+
+          <a
+            href="mailto:contact@farzamv.ir"
+            class="group relative overflow-hidden rounded-full border border-white/10 bg-white/[0.04] px-5 py-2.5 text-neutral-400 backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.09] hover:text-white hover:shadow-[0_10px_40px_rgba(255,255,255,0.08)]"
+          >
+            <span class="relative z-10 flex items-center gap-2">
+              Email
+              <span
+                class="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
+              >
+                ↗
+              </span>
+            </span>
+
+            <span
+              class="absolute -bottom-8 -left-4 h-12 w-[120%] rounded-full bg-white/10 blur-xl transition-transform duration-700 group-hover:translate-y-[-10px]"
+            ></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- =====================================
+       JAVASCRIPT
+  ====================================== -->
+    <script src="./main.js"></script>
+  </body>
+</html>
